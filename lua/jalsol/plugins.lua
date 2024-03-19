@@ -1,7 +1,6 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-  -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
 
@@ -30,6 +29,15 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'dstein64/vim-startuptime'
+  use 'tpope/vim-commentary'
+  use 'Raimondi/delimitMate'
+  use 'github/copilot.vim'
+
+  use "lukas-reineke/indent-blankline.nvim"
+  use 'hiphish/rainbow-delimiters.nvim'
+
+  use 'romainl/vim-cool'
+
+  use 'nvim-treesitter/nvim-treesitter-context'
 end)
 

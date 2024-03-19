@@ -1,4 +1,4 @@
-vim.loader.enable()
+-- vim.loader.enable()
 
 require("jalsol.remap")
 require("jalsol.plugins")

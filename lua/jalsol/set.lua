@@ -27,7 +27,7 @@ set.foldexpr = "nvim_treesitter#foldexpr()"
 
 -- Statusline and Tabline
 set.showtabline = 0
-set.showmode = false
+-- set.showmode = false
 set.cmdheight = 1
 set.signcolumn = 'no'
 set.cursorline = true
