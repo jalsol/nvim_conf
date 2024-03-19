@@ -37,7 +37,7 @@ return require('packer').startup(function(use)
   use 'hiphish/rainbow-delimiters.nvim'
 
   use 'romainl/vim-cool'
-
   use 'nvim-treesitter/nvim-treesitter-context'
+  use 'kosayoda/nvim-lightbulb'
 end)
 

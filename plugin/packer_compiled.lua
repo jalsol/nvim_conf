@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-lightbulb"] = {
+    loaded = true,
+    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
+    url = "https://github.com/kosayoda/nvim-lightbulb"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
