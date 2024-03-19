@@ -51,23 +51,12 @@ set.shortmess = vim.o.shortmess .. 'c'
 set.clipboard = 'unnamedplus'
 set.wrap = false
 let.c_no_curly_error = true
+set.updatetime = 50
 -- set.conceallevel = 0
-
--- Neovide & GUI settings in general
--- let.neovide_refresh_rate = 60
--- let.neovide_remember_window_size = true
--- let.neovide_input_use_logo = true
--- let.neovide_cursor_animation_length = 0
--- let.neovide_cursor_trail_length = 0
--- let.neovide_cursor_antialiasing = true
--- set.guifont = "JetBrains Mono Light:h10.85"
 
 -- Autoload
 vim.cmd [[
 au VimLeave *call system("xsel -ib", getreg('+'))
 au FileType cpp setlocal commentstring=//\ %s nowrap
-" au FileType yaml,typescriptreact,typescript,json,html,javascript,css,scss,tex setlocal sw=2 ts=2 sts=2
-" au BufRead,BufNewFile *.sage,*.pyx,*.spyx set filetype=python
-
 au VimLeave,VimSuspend * set guicursor=a:ver20-blinkon0
 ]]
