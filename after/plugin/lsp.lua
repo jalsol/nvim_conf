@@ -1,3 +1,4 @@
+---------- LSP Zero -----------
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
@@ -11,6 +12,20 @@ lsp_zero.set_sign_icons({
   info = '»'
 })
 
+---------- lspconfig -----------
+
+local lspconfig = require('lspconfig')
+
+lspconfig.clangd.setup({
+  on_attach = lsp_zero.on_attach,
+  capabilities = lsp_zero.capabilities,
+  cmd = {
+    "clangd",
+    "--offset-encoding=utf-16",
+  },
+})
+
+---------- Mason -----------
 require('mason').setup({})
 require('mason-lspconfig').setup({
   ensure_installed = {},
@@ -20,6 +35,7 @@ require('mason-lspconfig').setup({
   },
 })
 
+---------- cmp -----------
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()
 
