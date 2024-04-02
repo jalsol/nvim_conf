@@ -33,6 +33,8 @@ telescope.setup({
                 -- VNOJ specific
                 "-g", "!**/resources/*",
                 "-g", "!**/sass_processed/*",
+                -- Dune
+                "-g", "!**/_build/*",
             }
 		},
 	},
