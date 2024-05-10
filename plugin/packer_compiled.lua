@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   delimitMate = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/delimitMate",
@@ -143,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["packer.nvim"] = {
     loaded = true,

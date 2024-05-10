@@ -19,7 +19,6 @@ return require('packer').startup(function(use)
     requires = {
       {'williamboman/mason.nvim'},
       {'williamboman/mason-lspconfig.nvim'},
-  
       -- LSP Support
       {'neovim/nvim-lspconfig'},
       -- Autocompletion
@@ -30,8 +29,8 @@ return require('packer').startup(function(use)
   }
 
   use 'tpope/vim-commentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'Raimondi/delimitMate'
-  use 'github/copilot.vim'
 
   use "lukas-reineke/indent-blankline.nvim"
   use 'hiphish/rainbow-delimiters.nvim'

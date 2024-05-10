@@ -58,5 +58,6 @@ set.updatetime = 50
 vim.cmd [[
 au VimLeave *call system("xsel -ib", getreg('+'))
 au FileType cpp setlocal commentstring=//\ %s nowrap
-au VimLeave,VimSuspend * set guicursor=a:ver20-blinkon0
+au FileType c setlocal commentstring=//\ %s nowrap
+" au VimLeave,VimSuspend * set guicursor=a:ver20-blinkon0
 ]]
