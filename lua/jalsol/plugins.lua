@@ -38,5 +38,7 @@ return require('packer').startup(function(use)
   use 'romainl/vim-cool'
   use 'nvim-treesitter/nvim-treesitter-context'
   use 'kosayoda/nvim-lightbulb'
+
+  use 'christoomey/vim-tmux-navigator'
 end)
 

@@ -35,6 +35,18 @@ require('mason-lspconfig').setup({
   },
 })
 
+local lsp = require('lsp-zero').preset({})
+
+require('lspconfig').clangd.setup({
+    cmd = {
+        "clangd",
+        "--background-index",
+        "--clang-tidy"
+    }
+})
+
+lsp.setup()
+
 ---------- cmp -----------
 local cmp = require('cmp')
 local cmp_action = require('lsp-zero').cmp_action()

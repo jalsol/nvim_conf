@@ -37,10 +37,10 @@ map('n', 'n', 'nzz', silent_noremap)
 map('n', 'N', 'Nzz', silent_noremap)
 
 -- Movements between windows
-map('n', '<C-h>', '<C-w>h', silent_noremap)
-map('n', '<C-j>', '<C-w>j', silent_noremap)
-map('n', '<C-k>', '<C-w>k', silent_noremap)
-map('n', '<C-l>', '<C-w>l', silent_noremap)
+map('n', '<C-h>', '<cmd><C-U>TmuxNavigateLeft<CR>', silent_noremap)
+map('n', '<C-j>', '<cmd><C-U>TmuxNavigateDown<CR>', silent_noremap)
+map('n', '<C-k>', '<cmd><C-U>TmuxNavigateUp<CR>', silent_noremap)
+map('n', '<C-l>', '<cmd><C-U>TmuxNavigateRight<CR>', silent_noremap)
 
 -- Buffer
 map('n', '<A-j>', ':bnext<CR>', noremap)
