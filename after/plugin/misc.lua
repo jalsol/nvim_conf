@@ -61,3 +61,5 @@ local lightbuild_config = {
 }
 
 require("nvim-lightbulb").setup(lightbuild_config)
+
+require("ranger-nvim").setup({ replace_netrw = true })

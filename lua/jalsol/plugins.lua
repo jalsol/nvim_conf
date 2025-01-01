@@ -8,6 +8,7 @@ return require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim', tag = '0.1.6',
      requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use "kelly-lin/ranger.nvim"
 
   use { "catppuccin/nvim", as = "catppuccin" }
 

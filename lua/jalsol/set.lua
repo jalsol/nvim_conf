@@ -53,6 +53,8 @@ set.wrap = false
 let.c_no_curly_error = true
 set.updatetime = 50
 -- set.conceallevel = 0
+set.scrolloff = 8
+set.sidescrolloff = 8
 
 -- Autoload
 vim.cmd [[

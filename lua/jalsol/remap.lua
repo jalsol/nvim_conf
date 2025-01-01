@@ -6,6 +6,12 @@ local function t(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
 end
 
+local function copy_path(register_buffer)
+    local path = vim.fn.expand("%:p")
+    vim.fn.setreg(register_buffer, path .. '\n')
+    vim.notify(path)
+end
+
 let.mapleader = t'<Space>'
 
 local noremap = { noremap = true, silent = false }
@@ -64,3 +70,18 @@ map("n", "<C-u>", "<C-u>zz", silent_noremap)
 
 -- Misc
 map("n", "Q", "<Nop>", silent_noremap)
+
+map("n", "<leader>j", "", {
+    noremap = true,
+    callback = function() require("ranger-nvim").open(true) end,
+})
+
+map("n", "m", "", {
+    noremap = true,
+    callback = function() copy_path('"') end,
+})
+
+map("n", "<leader>m", "", {
+    noremap = true,
+    callback = function() copy_path('+') end,
+})
