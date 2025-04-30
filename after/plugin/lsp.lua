@@ -63,3 +63,7 @@ cmp.setup({
   },
 })
 
+require('ocaml').setup({
+    setup_conform = false,
+    -- setup_lspconfig = false,
+})

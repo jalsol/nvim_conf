@@ -41,5 +41,8 @@ return require('packer').startup(function(use)
   use 'kosayoda/nvim-lightbulb'
 
   use 'christoomey/vim-tmux-navigator'
+  use { "tjdevries/ocaml.nvim", build = "make" }
+  use "folke/trouble.nvim"
+  use "github/copilot.vim"
 end)
 

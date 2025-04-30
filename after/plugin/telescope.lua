@@ -35,6 +35,7 @@ telescope.setup({
                 "-g", "!**/sass_processed/*",
                 -- Dune
                 "-g", "!**/_build/*",
+                "-g", "!**/_opam/*",
             }
 		},
 	},

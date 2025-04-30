@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   delimitMate = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/delimitMate",
@@ -144,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
     url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
+  ["ocaml.nvim"] = {
+    loaded = true,
+    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/ocaml.nvim",
+    url = "https://github.com/tjdevries/ocaml.nvim"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -168,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
