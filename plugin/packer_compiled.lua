@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/jalsol/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/jalsol/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/jalsol/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/jalsol/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/jalsol/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
+local package_path_str = "/home/jalsol/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?.lua;/home/jalsol/.cache/nvim/packer_hererocks/2.1.1741730670/share/lua/5.1/?/init.lua;/home/jalsol/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?.lua;/home/jalsol/.cache/nvim/packer_hererocks/2.1.1741730670/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/jalsol/.cache/nvim/packer_hererocks/2.1.1741730670/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -89,16 +89,6 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
-  delimitMate = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/delimitMate",
-    url = "https://github.com/Raimondi/delimitMate"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -124,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-  ["nvim-lightbulb"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-lightbulb",
-    url = "https://github.com/kosayoda/nvim-lightbulb"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -149,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
     url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
-  ["ocaml.nvim"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/ocaml.nvim",
-    url = "https://github.com/tjdevries/ocaml.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -169,20 +149,10 @@ _G.packer_plugins = {
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/rainbow-delimiters.nvim",
     url = "https://github.com/hiphish/rainbow-delimiters.nvim"
   },
-  ["ranger.nvim"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/ranger.nvim",
-    url = "https://github.com/kelly-lin/ranger.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["trouble.nvim"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/trouble.nvim",
-    url = "https://github.com/folke/trouble.nvim"
   },
   ["vim-commentary"] = {
     loaded = true,
@@ -193,11 +163,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/vim-cool",
     url = "https://github.com/romainl/vim-cool"
-  },
-  ["vim-tmux-navigator"] = {
-    loaded = true,
-    path = "/home/jalsol/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
-    url = "https://github.com/christoomey/vim-tmux-navigator"
   }
 }
 

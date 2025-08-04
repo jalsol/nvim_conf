@@ -11,9 +11,9 @@ set.synmaxcol = 2048
 
 -- Indentation
 set.shiftround = true
-set.shiftwidth = 4
-set.tabstop = 4
-set.softtabstop = 4
+set.shiftwidth = 2
+set.tabstop = 2
+set.softtabstop = 2
 set.expandtab = true
 
 set.smartindent = true
@@ -31,7 +31,7 @@ set.showtabline = 0
 set.cmdheight = 1
 set.signcolumn = 'no'
 set.cursorline = true
-set.colorcolumn = "80"
+set.colorcolumn = "90"
 
 -- Number
 set.number = true
@@ -55,11 +55,14 @@ set.updatetime = 50
 -- set.conceallevel = 0
 set.scrolloff = 8
 set.sidescrolloff = 8
+set.splitright = true
 
 -- Autoload
 vim.cmd [[
-au VimLeave *call system("xsel -ib", getreg('+'))
+" au VimLeave *call system("xsel -ib", getreg('+'))
 au FileType cpp setlocal commentstring=//\ %s nowrap
 au FileType c setlocal commentstring=//\ %s nowrap
 " au VimLeave,VimSuspend * set guicursor=a:ver20-blinkon0
 ]]
+
+vim.diagnostic.config({ virtual_text = true })

@@ -63,7 +63,50 @@ cmp.setup({
   },
 })
 
-require('ocaml').setup({
-    setup_conform = false,
-    -- setup_lspconfig = false,
+-- require('ocaml').setup({
+--     setup_conform = false,
+--     -- setup_lspconfig = false,
+-- })
+
+local null_ls = require("null-ls")
+local formatting = null_ls.builtins.formatting
+local h = require("null-ls.helpers")
+
+local ormolu = {
+  method = null_ls.methods.FORMATTING,
+  filetypes = { "haskell" },
+  generator = h.formatter_factory({
+    command = "ormolu",
+    args = { "--stdin-input-file", "$FILENAME" },
+    to_stdin = true,
+  }),
+}
+
+local ocamlformat = {
+  method = null_ls.methods.FORMATTING,
+  filetypes = { "ocaml" },
+  generator = h.formatter_factory({
+    command = "ocamlformat",
+    args = { "--name", "$FILENAME", "-" },
+    to_stdin = true,
+  }),
+}
+
+null_ls.setup({
+  sources = {
+    ormolu,
+    ocamlformat,
+  },
+  on_attach = function(client, bufnr)
+    if client.supports_method("textDocument/formatting") then
+      local group = vim.api.nvim_create_augroup("FormatOnSave", { clear = true })
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        group = group,
+        buffer = bufnr,
+        callback = function()
+          vim.lsp.buf.format({ bufnr = bufnr })
+        end,
+      })
+    end
+  end,
 })

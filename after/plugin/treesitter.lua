@@ -10,7 +10,8 @@ require'nvim-treesitter.configs'.setup {
     "go",
     "vim",
     "vimdoc",
-    "query"
+    "query",
+    "ocaml"
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)

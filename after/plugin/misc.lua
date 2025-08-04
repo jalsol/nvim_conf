@@ -26,40 +26,4 @@ require'treesitter-context'.setup{
   on_attach = nil, -- (fun(buf: integer): boolean) return false to disable attaching
 }
 
-local lightbuild_config = {
-    sign = {
-        enabled = false,
-    },
-
-    virtual_text = {
-        enabled = true,
-        text = "💡",
-        pos = "eol",
-        hl = "LightBulbVirtualText",
-        -- How to combine other highlights with text highlight.
-        -- See `hl_mode` of |nvim_buf_set_extmark|.
-        hl_mode = "combine",
-    },
-
-    -- 5. Number column.
-    number = {
-        enabled = true,
-        -- Highlight group to highlight the number column if there is a lightbulb.
-        hl = "LightBulbNumber",
-    },
-
-    -- 6. Content line.
-    line = {
-        enabled = true,
-        -- Highlight group to highlight the line if there is a lightbulb.
-        hl = "LightBulbLine",
-    },
-
-    autocmd = {
-        enabled = true,
-    },
-}
-
-require("nvim-lightbulb").setup(lightbuild_config)
-
-require("ranger-nvim").setup({ replace_netrw = true })
+-- require("ranger-nvim").setup({ replace_netrw = true })

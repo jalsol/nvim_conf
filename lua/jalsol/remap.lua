@@ -1,6 +1,5 @@
 local map = vim.api.nvim_set_keymap
 local let = vim.g
-local cmd = vim.cmd
 
 local function t(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
@@ -43,10 +42,10 @@ map('n', 'n', 'nzz', silent_noremap)
 map('n', 'N', 'Nzz', silent_noremap)
 
 -- Movements between windows
-map('n', '<C-h>', '<cmd><C-U>TmuxNavigateLeft<CR>', silent_noremap)
-map('n', '<C-j>', '<cmd><C-U>TmuxNavigateDown<CR>', silent_noremap)
-map('n', '<C-k>', '<cmd><C-U>TmuxNavigateUp<CR>', silent_noremap)
-map('n', '<C-l>', '<cmd><C-U>TmuxNavigateRight<CR>', silent_noremap)
+map('n', '<C-h>', '<C-w>h', silent_noremap)
+map('n', '<C-j>', '<C-w>j', silent_noremap)
+map('n', '<C-k>', '<C-w>k', silent_noremap)
+map('n', '<C-l>', '<C-w>l', silent_noremap)
 
 -- Buffer
 map('n', '<A-j>', ':bnext<CR>', noremap)
@@ -71,10 +70,10 @@ map("n", "<C-u>", "<C-u>zz", silent_noremap)
 -- Misc
 map("n", "Q", "<Nop>", silent_noremap)
 
-map("n", "<leader>j", "", {
-    noremap = true,
-    callback = function() require("ranger-nvim").open(true) end,
-})
+-- map("n", "<leader>j", "", {
+--     noremap = true,
+--     callback = function() require("ranger-nvim").open(true) end,
+-- })
 
 map("n", "m", "", {
     noremap = true,

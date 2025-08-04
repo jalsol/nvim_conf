@@ -4,11 +4,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use "nvim-lua/plenary.nvim"
 
-  use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.6',
-     requires = { {'nvim-lua/plenary.nvim'} }
-  }
-  use "kelly-lin/ranger.nvim"
+  -- use "kelly-lin/ranger.nvim"
 
   use { "catppuccin/nvim", as = "catppuccin" }
 
@@ -38,11 +34,12 @@ return require('packer').startup(function(use)
 
   use 'romainl/vim-cool'
   use 'nvim-treesitter/nvim-treesitter-context'
-  use 'kosayoda/nvim-lightbulb'
 
-  use 'christoomey/vim-tmux-navigator'
-  use { "tjdevries/ocaml.nvim", build = "make" }
-  use "folke/trouble.nvim"
-  use "github/copilot.vim"
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.8',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use 'nvimtools/none-ls.nvim'
 end)
 
